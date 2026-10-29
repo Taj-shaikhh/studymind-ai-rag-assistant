@@ -1,0 +1,14 @@
+
+langchain
+langchain-community
+langchain-core
+langchain-text-splitters
+langchain-openai
+langchain-groq
+langchain-openrouter
+langchain-chroma
+chromadb
+pypdf
+python-dotenv
+streamlit
+beautifulsoup4

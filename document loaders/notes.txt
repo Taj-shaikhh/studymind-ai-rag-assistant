@@ -1,0 +1,130 @@
+# Machine Learning — Study Notes
+
+## 1. What is Machine Learning?
+
+Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn patterns from data and make predictions or decisions without being explicitly programmed for every situation.
+
+Example: An email spam filter learns from previous emails to classify new emails as spam or not spam.
+
+## 2. Types of Machine Learning
+
+### Supervised Learning
+
+Supervised learning uses labeled data, meaning the training dataset contains both input features and their correct outputs.
+
+Examples:
+- Predicting house prices.
+- Classifying emails as spam or not spam.
+- Predicting whether a customer will leave a company.
+
+Common algorithms include Linear Regression, Logistic Regression, Decision Trees, Random Forest, and Support Vector Machines.
+
+### Unsupervised Learning
+
+Unsupervised learning works with unlabeled data to discover hidden patterns or groups.
+
+Examples:
+- Grouping customers based on purchasing behavior.
+- Discovering patterns in shopping data.
+- Grouping similar documents.
+
+Common algorithms include K-Means Clustering, Hierarchical Clustering, and Principal Component Analysis (PCA).
+
+### Reinforcement Learning
+
+Reinforcement learning trains an agent to make decisions by interacting with an environment. The agent receives rewards or penalties based on its actions.
+
+Examples:
+- Training a robot to walk.
+- Teaching an AI agent to play a game.
+- Optimizing traffic signals.
+
+## 3. Regression and Classification
+
+Regression predicts continuous numerical values.
+
+Example: Predicting a house price of ₹50 lakh based on its size, location, and number of bedrooms.
+
+Classification predicts discrete categories or classes.
+
+Example: Predicting whether a loan applicant will default or not default.
+
+Linear Regression is commonly used for regression tasks, while Logistic Regression is commonly used for binary classification.
+
+## 4. Training and Testing Data
+
+A dataset is often divided into training and testing sets.
+
+Training data is used to teach the model patterns in the data. Testing data evaluates how well the trained model performs on previously unseen examples.
+
+A common split is 80% training data and 20% testing data, although the appropriate split depends on the dataset and problem.
+
+Data leakage occurs when information that would not legitimately be available during training is used to build or evaluate the model, resulting in overly optimistic performance estimates.
+
+## 5. Overfitting and Underfitting
+
+Overfitting happens when a model learns the training data too closely, including noise. It performs well on training data but poorly on unseen data.
+
+Underfitting happens when a model is too simple to learn the important patterns in the data. It performs poorly on both training and testing data.
+
+Ways to reduce overfitting include cross-validation, regularization, pruning decision trees, and collecting more representative training data.
+
+## 6. Feature Engineering and Data Preprocessing
+
+Feature engineering is the process of creating, transforming, or selecting useful input variables to improve model performance.
+
+Common preprocessing techniques include:
+
+- Handling missing values.
+- Removing duplicate records.
+- Encoding categorical variables.
+- Scaling numerical features.
+- Detecting and investigating outliers.
+
+Standardization transforms a numerical feature so that it has a mean of approximately zero and a standard deviation of approximately one.
+
+Normalization commonly rescales values to a specified range, such as zero to one.
+
+Preprocessing steps should be fitted using training data only, then applied to validation and testing data to avoid data leakage.
+
+## 7. Model Evaluation Metrics
+
+Accuracy measures the proportion of all predictions that are correct.
+
+Precision measures the proportion of predicted positive cases that are actually positive.
+
+Recall measures the proportion of actual positive cases that the model correctly identifies.
+
+F1-score is the harmonic mean of precision and recall.
+
+For regression tasks, common metrics include Mean Absolute Error (MAE), Mean Squared Error (MSE), and Root Mean Squared Error (RMSE).
+
+Accuracy alone can be misleading for imbalanced datasets. For example, a model that predicts every transaction as legitimate may achieve high accuracy when fraudulent transactions are rare, while detecting almost no fraud.
+
+## 8. Decision Tree and Random Forest
+
+A Decision Tree makes predictions by splitting data into branches based on feature values. Each split aims to create groups that are more useful for predicting the target.
+
+A Random Forest combines predictions from multiple decision trees. For classification, the trees typically vote for a class; for regression, their predictions are commonly averaged.
+
+Random Forest often reduces the variance of a single decision tree and can generalize better, although its performance depends on the data and configuration.
+
+## 9. Cross-Validation and Hyperparameter Tuning
+
+Cross-validation evaluates a model across multiple training and validation splits to estimate how well it may generalize to unseen data.
+
+In k-fold cross-validation, the dataset is divided into k folds. The model is trained on k-1 folds and validated on the remaining fold, repeating the process until each fold has been used for validation.
+
+Hyperparameters are settings chosen before or during model selection, such as tree depth, learning rate, or the number of trees.
+
+Grid Search tests specified combinations of hyperparameters, while Randomized Search samples combinations from specified distributions or candidate values.
+
+## 10. Real-World Applications of Machine Learning
+
+Machine Learning is used in healthcare for assisting with medical image analysis, in banking for fraud detection, in e-commerce for recommendation systems, in transportation for demand prediction, and in education for personalized learning.
+
+A typical machine learning workflow includes defining the problem, collecting data, cleaning the data, performing exploratory data analysis, engineering features, training models, evaluating performance, selecting a model, and deploying it.
+
+## Summary
+
+Machine Learning helps computers learn patterns from data and use those patterns to make predictions or decisions. The three major learning types are supervised learning, unsupervised learning, and reinforcement learning. Good model development requires appropriate preprocessing, reliable evaluation, and careful testing on unseen data.
